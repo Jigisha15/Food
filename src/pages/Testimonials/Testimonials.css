@@ -1,0 +1,54 @@
+.testimonials {
+  width: 17rem;
+  height: 20.5rem;
+  border: 1px solid black;
+}
+
+.testimonials-bg {
+  position: absolute;
+  width: 17rem;
+  height: 20.5rem;
+}
+
+.testimonials-text {
+  background-color: rgba(0, 0, 0, 0.3);
+  bottom: 0;
+  position: relative;
+  color: aliceblue;
+  overflow: hidden;
+}
+
+.test {
+  border: 1px solid black;
+  width: 15rem;
+  /* height: 12rem; */
+  display: flex;
+  flex-direction: column;
+  padding: 0.5rem;
+  line-height: 1;
+}
+
+.test-name {
+  font-size: 1.2rem;
+}
+
+.test-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 20rem;
+  height: 10rem;
+  padding: 10px;
+}
+
+.test-form input {
+  width: 20rem;
+
+  height: 1.5rem;
+  margin: 10px;
+}
+
+.test-form button {
+  width: 10rem;
+  height: 2rem;
+}

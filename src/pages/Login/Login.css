@@ -1,0 +1,52 @@
+.login-container {
+  border: 1px solid black;
+  max-width: 100vw;
+  place-self: center start;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0 0 5rem 0;
+}
+
+.login-title {
+  font-size: 2rem;
+}
+
+.login-form {
+  border: 1px solid black;
+  padding: 2.5rem;
+}
+
+.login-form input {
+  width: 20rem;
+  height: 1.5rem;
+}
+
+.login-button {
+  font-size: 0.9rem;
+  border: 1px solid black;
+  border-radius: 20px;
+  padding: 0.2rem 2rem 0.2rem 2rem;
+  margin: 0.5rem 0 0.5rem 0;
+  background-color: inherit;
+  cursor: pointer;
+}
+
+.login-register {
+  border: none;
+  background-color: inherit;
+}
+
+.login-button:hover {
+  color: aliceblue;
+  background-color: darkgreen;
+}
+
+.login-span {
+  font-size: 0.9rem;
+  text-decoration: underline;
+  font-style: italic;
+  color: darkgreen;
+  font-weight: 600;
+  cursor: pointer;
+}

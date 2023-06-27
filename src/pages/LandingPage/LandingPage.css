@@ -1,0 +1,79 @@
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC&family=Fredericka+the+Great&family=News+Cycle&display=swap');
+
+/* // font-family: 'Amatic SC', cursive;
+// font-family: 'Fredericka the Great', cursive;
+// font-family: 'News Cycle', sans-serif; */
+
+.landingpage-container {
+  max-width: 100vw;
+  height: 70vh;
+}
+
+.black-container {
+  width: 25vw;
+  height: 50vh;
+  background-color: #000;
+  position: relative;
+  top: 8%;
+  left: 5%;
+}
+
+.image-container {
+  background-image: url('../../assets/kokan1.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 25vw;
+  height: 50vh;
+  position: absolute;
+  top: 25%;
+  left: 10%;
+}
+
+.mid-text {
+  box-shadow: 0 4px 6px 0 rgba(0, 0, 0, 0.2);
+  width: 25vw;
+  height: 45vh;
+  position: absolute;
+  top: 25%;
+  left: 40%;
+  padding: 1rem 1rem 1rem 1rem;
+}
+
+.landing-carousel {
+  border: 1px solid black;
+  max-width: 100vw;
+  height: 55vh;
+  margin: 2rem 0 5rem 0;
+  padding: 3rem 0 3rem 0;
+
+  display: flex;
+  gap: 2rem;
+}
+
+.fix-image {
+  background-image: url('../../assets/ocean1.jpg');
+  background-position: center;
+  background-size: cover;
+  max-width: 100vw;
+  height: 50vh;
+  background-attachment: fixed;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.image-quote {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 30rem;
+  height: 10rem;
+  color: grey;
+  font-weight: 600;
+  font-size: 1rem;
+  font-family: 'Fredericka the Great', cursive;
+  background-color: #f1eeeebb;
+  border: 1px solid grey;
+}

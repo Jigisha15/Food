@@ -1,0 +1,16 @@
+.menu-container {
+  margin: 3rem 0 3rem 0;
+  justify-content: center;
+  display: grid;
+  grid-template-columns: 29vw 29vw 29vw;
+  gap: 1rem;
+}
+
+.menu-h1 {
+  margin: 1rem;
+  font-size: 2rem;
+  font-weight: 600;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

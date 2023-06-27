@@ -1,0 +1,49 @@
+.register-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 0 5rem 0;
+}
+
+.register-title {
+  text-transform: uppercase;
+  font-weight: 600;
+}
+
+.register-form {
+  border: 1px solid black;
+  padding: 2.5rem;
+}
+
+.register-form input {
+  width: 20rem;
+  height: 1.5rem;
+}
+
+.register-button {
+  border: 1px solid black;
+  padding: 0.2rem 2rem 0.2rem 2rem;
+  margin: 0.5rem 0 0.5rem 0;
+  border-radius: 15px;
+  background-color: inherit;
+  cursor: pointer;
+}
+
+.register-button:hover {
+  background-color: darkgreen;
+  color: aliceblue;
+}
+
+.register-login {
+  background-color: inherit;
+  border: none;
+}
+
+.register-span {
+  text-decoration: underline;
+  font-style: italic;
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: darkgreen;
+  cursor: pointer;
+}

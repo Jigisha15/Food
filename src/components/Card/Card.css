@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC&family=News+Cycle&display=swap');
+
+.card-container {
+  width: 450px;
+  height: 250px;
+  /* // border: 1px solid $tcol; */
+  /* // font-family: 'Amatic SC', cursive; */
+  font-family: 'News Cycle', sans-serif;
+}
+
+.card-image {
+  width: 170px;
+  height: 100px;
+  border: 1px solid #2a7844;
+  border-radius: 5px;
+  box-shadow: 0 4px 8px 2px rgba(0, 0, 0, 0.4);
+  z-index: 1;
+  position: relative;
+  top: 15%;
+
+  background-image: url('../../assets/kokan1.jpg');
+  background-position: center;
+  background-size: cover;
+}
+
+.card-text {
+  width: 400px;
+  height: 200px;
+  border: 1px solid #2a7844;
+  border-radius: 5px;
+  box-shadow: 0 4px 8px 2px rgba(0, 0, 0, 0.2);
+  position: relative;
+  bottom: 32%;
+  left: 5%;
+}
+
+.card-title {
+  font-size: 1.2rem;
+  margin: 1rem 0 0 10rem;
+}
+
+.card-p {
+  font-size: 0.95rem;
+  margin: 1rem 1.7rem 0 10rem;
+}
+
+.card-span {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 3rem 0 2rem 0;
+}
+
+.card-btn {
+  margin: 0 2rem 0 4rem;
+  width: 5rem;
+  display: flex;
+  justify-content: center;
+  border-radius: 5px;
+  border: 1px solid #2a7844;
+  text-decoration: none;
+  font-weight: 600;
+  color: black;
+}
+
+.card-btn:hover {
+  font-weight: 400;
+  color: #edfef0;
+  background-color: #2a7844;
+  cursor: pointer;
+}
+
+.card-heart {
+  border: 0;
+  background-color: inherit;
+  color: black;
+}
+
+.card-heart:hover {
+  /* color: #2a7844; */
+  cursor: pointer;
+}
