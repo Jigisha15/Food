@@ -10,7 +10,7 @@ const Login = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault()
-    console.log(email, pass)
+    // console.log(email, pass)
   }
 
   // this is for navigate

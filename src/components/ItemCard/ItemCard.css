@@ -13,6 +13,7 @@
 
 .itemcard-text {
   position: absolute;
+  min-width: 16rem;
   max-width: 18rem;
   height: 0rem;
   opacity: 0;
@@ -45,7 +46,8 @@
 }
 
 .itemcard-btn {
-  border-radius: 15px;
+  border-radius: 50px;
+  font-size: 15px;
   border: 1px solid #d2e4d6;
 }
 

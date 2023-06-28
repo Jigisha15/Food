@@ -12,7 +12,7 @@ const Register = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault()
-    console.log(name, email, pass)
+    // console.log(name, email, pass)
   }
 
   // this is to navigate

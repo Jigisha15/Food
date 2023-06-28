@@ -1,0 +1,9 @@
+.fooditem {
+  margin: 3rem 0 3rem 0;
+  display: grid;
+  grid-template-columns: 25vw 25vw 25vw;
+  grid-row-gap: 3rem;
+  justify-content: center;
+  align-items: center;
+  gap: 2;
+}

@@ -19,114 +19,86 @@ const Menu = () => {
     {
       id: 1,
       image: bhaji,
+      title: 'Bhaji',
+      desc: 'This is the description of this menu item.',
+      to: '/bhaji',
     },
     {
       id: 2,
       image: bread,
+      title: 'Bread',
+      desc: 'This is the description of this menu item.',
+      to: '/bread',
     },
     {
       id: 3,
       image: chicken,
+      title: 'Chicken',
+      desc: 'This is the description of this menu item.',
+      to: '/chicken',
     },
     {
       id: 4,
       image: drinks,
+      title: 'Drinks',
+      desc: 'This is the description of this menu item.',
+      to: '/drinks',
     },
     {
       id: 5,
       image: fish,
+      title: 'Fish',
+      desc: 'This is the description of this menu item.',
+      to: '/fish',
     },
     {
       id: 6,
       image: mutton,
+      title: 'Mutton',
+      desc: 'This is the description of this menu item.',
+      to: '/mutton',
     },
     {
       id: 7,
       image: nashta,
+      title: 'Nashta',
+      desc: 'This is the description of this menu item.',
+      to: '/nashta',
     },
     {
       id: 8,
       image: sweets,
+      title: 'Sweets',
+      desc: 'This is the description of this menu item.',
+      to: '/sweets',
     },
     {
       id: 9,
       image: thali,
+      title: 'Thali',
+      desc: 'This is the description of this menu item.',
+      to: '/thali',
     },
   ]
 
-  console.log(menuItems)
-
-  // return (
-  //   {
-  //     menuItems.map((item) => {
-  //       return (
-  //         <div className="menu-container">
-  //         </div>
-  //     )
-  //       })}
-  // )
-
-  // return (
-  //   <>
-  //     <h1 className="menu-h1">This is our menu!</h1>
-  //     <div className="menu-container">
-  //       <Card
-  //         image={bhaji}
-  //         title={'BHAJI'}
-  //         desc={'This is the description of my menu'}
-  //         to={'/bhaji'}
-  //       />
-  //       <Card
-  //         image={bread}
-  //         title={'BREAD'}
-  //         desc={'This is the description of my menu'}
-  //         to={'/breads'}
-  //       />
-  //       <Card
-  //         image={chicken}
-  //         title={'CHICKEN'}
-  //         desc={'This is the description of my menu'}
-  //         to={'/chicken'}
-  //       />
-  //       <Card
-  //         image={drinks}
-  //         title={'DRINKS'}
-  //         desc={'This is the description of my menu'}
-  //         to={'/drinks'}
-  //       />
-  //       <Card
-  //         image={fish}
-  //         title={'FISH'}
-  //         desc={'This is the description of my menu'}
-  //         to={'/seafood'}
-  //       />
-  //       <Card
-  //         image={mutton}
-  //         title={'MUTTON'}
-  //         desc={'This is the description of my menu'}
-  //         to={'/mutton'}
-  //       />
-  //       <Card
-  //         image={nashta}
-  //         title={'NASHTA'}
-  //         desc={'This is the description of my menu'}
-  //         to={'/nashta'}
-  //       />
-  //       <Card
-  //         image={sweets}
-  //         title={'SWEETS'}
-  //         desc={'This is the description of my menu'}
-  //         to={'/sweets'}
-  //       />
-  //       <Card
-  //         image={thali}
-  //         title={'THALI'}
-  //         desc={'This is the description of my menu'}
-  //         to={'/thali'}
-  //       />
-  //     </div>
-  //   </>
-  // )
+  return (
+    <div className="menu">
+      <div className="menu-h1">This is our Menu!</div>
+      {menuItems.map((item) => (
+        <div
+          className="menu-container"
+          key={item.id}
+        >
+          <Card
+            image={item.image}
+            title={item.title}
+            desc={item.desc}
+            to={item.to}
+          />
+        </div>
+      ))}
+    </div>
+  )
 }
 
 export default Menu

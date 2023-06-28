@@ -50,7 +50,7 @@ const MenuDisplay = () => {
     },
   ]
 
-  console.log(menu)
+  // console.log(menu)
   return (
     <div className="menudisplay">
       {menu.map((item, index) => {

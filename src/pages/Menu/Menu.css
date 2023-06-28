@@ -1,8 +1,12 @@
+.menu {
+  max-width: 100vw;
+  margin: 1rem 2rem 1rem 7rem;
+}
+
 .menu-container {
-  margin: 3rem 0 3rem 0;
-  justify-content: center;
-  display: grid;
-  grid-template-columns: 29vw 29vw 29vw;
+  margin: 1rem 0 2rem 0;
+  display: inline-flex;
+  /* grid-template-columns: 29vw 29vw 29vw; */
   gap: 1rem;
 }
 

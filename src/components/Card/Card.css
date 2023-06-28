@@ -2,9 +2,7 @@
 
 .card-container {
   width: 450px;
-  height: 250px;
-  /* // border: 1px solid $tcol; */
-  /* // font-family: 'Amatic SC', cursive; */
+  max-height: 250px;
   font-family: 'News Cycle', sans-serif;
 }
 
@@ -30,11 +28,12 @@
   border-radius: 5px;
   box-shadow: 0 4px 8px 2px rgba(0, 0, 0, 0.2);
   position: relative;
-  bottom: 32%;
+  bottom: 35%;
   left: 5%;
 }
 
 .card-title {
+  font-weight: bold;
   font-size: 1.2rem;
   margin: 1rem 0 0 10rem;
 }
