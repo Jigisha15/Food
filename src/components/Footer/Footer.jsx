@@ -1,4 +1,5 @@
-import React from 'react'
+import React, { useRef } from 'react'
+import emailjs from '@emailjs/browser'
 
 import { SlSocialFacebook } from 'react-icons/sl'
 import { SlSocialYoutube } from 'react-icons/sl'
@@ -7,6 +8,30 @@ import { SlSocialInstagram } from 'react-icons/sl'
 import './Footer.css'
 
 const Footer = () => {
+  const form = useRef()
+
+  const sendEmail = (e) => {
+    e.preventDefault()
+
+    emailjs
+      .sendForm(
+        'service_ien3edf',
+        'template_tqhsfqu',
+        form.current,
+        'ZFF2ensoiVlBKbQoc'
+      )
+      .then(
+        (result) => {
+          console.log(result.text)
+        },
+        (error) => {
+          console.log(error.text)
+        }
+      )
+    // console.log('Email sent')
+    e.target.reset()
+  }
+
   return (
     <div className="footer-container">
       <div className="footer-first">
@@ -85,24 +110,30 @@ const Footer = () => {
       <div className="footer-right">
         <h1 className="r1">Send Us your Feedback</h1>
         <form
+          ref={form}
+          onSubmit={sendEmail}
           action=""
           className="r1-form"
         >
           <input
             type="text"
             placeholder="Name"
+            name="name"
           />
           <input
             type="email"
             placeholder="Email-Id"
+            name="email"
           />
           <input
             type="tel"
             placeholder="Contact number"
+            name="phone"
           />
           <input
             type="text"
             placeholder="Your Feedback"
+            name="feedback"
           />
           <input
             type="submit"
