@@ -11,24 +11,37 @@
   margin-top: 1.5rem;
   display: flex;
   align-items: center;
-  gap: 5rem;
+  gap: 3rem;
 }
 
 .nav-li {
   font-size: 1.2rem;
   text-decoration: none;
-  font-weight: 400;
+  font-weight: 300;
   color: #fff;
 
+  border-bottom: 0;
   transform: scaleX(0);
+  width: 0%;
+  transition: transform 5s;
+
+  /* transform: scaleX(0);
   width: 100%;
   transform-origin: center;
-
-  transition: transform 5s;
+  transition: transform 5s; */
 }
 
 .nav-li:hover {
+  transform: scaleX(100%);
   transform-origin: left;
   border-bottom: 1px solid white;
-  transform: scaleX(2);
+  width: 100%;
+
+  /* transform-origin: left;
+  border-bottom: 1px solid white;
+  transform: scaleX(1); */
+}
+
+.active {
+  font-weight: 500;
 }

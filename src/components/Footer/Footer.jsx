@@ -8,29 +8,29 @@ import { SlSocialInstagram } from 'react-icons/sl'
 import './Footer.css'
 
 const Footer = () => {
-  const form = useRef()
+  // const form = useRef()
 
-  const sendEmail = (e) => {
-    e.preventDefault()
+  // const sendEmail = (e) => {
+  //   e.preventDefault()
 
-    emailjs
-      .sendForm(
-        'service_ien3edf',
-        'template_tqhsfqu',
-        form.current,
-        'ZFF2ensoiVlBKbQoc'
-      )
-      .then(
-        (result) => {
-          console.log(result.text)
-        },
-        (error) => {
-          console.log(error.text)
-        }
-      )
-    // console.log('Email sent')
-    e.target.reset()
-  }
+  //   emailjs
+  //     .sendForm(
+  //       'service_ien3edf',
+  //       'template_tqhsfqu',
+  //       form.current,
+  //       'ZFF2ensoiVlBKbQoc'
+  //     )
+  //     .then(
+  //       (result) => {
+  //         console.log(result.text)
+  //       },
+  //       (error) => {
+  //         console.log(error.text)
+  //       }
+  //     )
+  //   // console.log('Email sent')
+  //   e.target.reset()
+  // }
 
   return (
     <div className="footer-container">
@@ -107,7 +107,7 @@ const Footer = () => {
           <li>Sunday: 8:am-3pm 7pm-12am</li>
         </ul>
       </div>
-      <div className="footer-right">
+      {/* <div className="footer-right">
         <h1 className="r1">Send Us your Feedback</h1>
         <form
           ref={form}
@@ -149,7 +149,7 @@ const Footer = () => {
             }}
           />
         </form>
-      </div>
+      </div> */}
     </div>
   )
 }

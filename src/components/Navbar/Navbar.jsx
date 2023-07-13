@@ -55,6 +55,14 @@ const Navbar = () => {
             Testimonials
           </NavLink>
         </li>
+        <li>
+          <NavLink
+            className="nav-li"
+            to={'/feedback'}
+          >
+            Feedback
+          </NavLink>
+        </li>
       </ul>
     </div>
   )

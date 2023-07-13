@@ -3,6 +3,8 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
 
 import Navbar from './components/Navbar/Navbar'
 import Footer from './components/Footer/Footer'
+import Feedback from './components/Feedback/Feedback'
+
 import LandingPage from './pages/LandingPage/LandingPage'
 import About from './pages/About/About'
 import Menu from './pages/Menu/Menu'
@@ -98,6 +100,10 @@ function App() {
           <Route
             path="/cart"
             Component={Cart}
+          />
+          <Route
+            path="/feedback"
+            Component={Feedback}
           />
         </Routes>
       </div>

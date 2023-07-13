@@ -1,54 +1,15 @@
 .about-container {
   max-width: 100vw;
+  height: 100vh;
+  background-color: #d2d5ca;
   display: flex;
   flex-direction: column;
 }
-.about-three {
-  max-width: 100vw;
-  height: 100vh;
-  background-color: #fff;
-  background-image: url('../../assets/kokan1.jpg');
-  background-position: center;
-  background-attachment: fixed;
-  background-size: cover;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
 
-.three-text {
-  font-size: 1.5rem;
-  width: 50vw;
-  border: 1px solid grey;
-  background-color: rgba(255, 255, 255, 0.2);
-  padding: 2rem;
-  font-weight: 600;
-}
-
-.about-animate {
-  background-color: lightgray;
-  min-height: 100vh;
-  display: grid;
-  align-content: center;
-  align-items: center;
-}
-
-.animate-one {
-  width: 40vh;
+.about-one {
+  width: 250px;
+  height: 170px;
   border: 1px solid black;
-  padding: 2rem;
-  min-height: 100vh;
-}
-
-.hidden {
-  opacity: 1;
-  transition: all 1s;
-  filter: blur(5px);
-  transform: translateX(-100%);
-}
-
-.show {
-  opacity: 1;
-  filter: blur(0);
-  transform: translateX(0);
+  text-align: center;
+  padding: 10px 5px 10px 5px;
 }
