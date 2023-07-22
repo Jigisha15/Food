@@ -20,6 +20,8 @@ const Testimonials = () => {
     var testimonial = { name: name, response: response }
     testimonials.push(testimonial)
     localStorage.setItem('testimonials', JSON.stringify(testimonials))
+
+    console.log(name, response)
   }
 
   return (
