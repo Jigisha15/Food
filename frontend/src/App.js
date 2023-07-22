@@ -65,7 +65,10 @@ function App() {
             path="/bhaji"
             Component={Bhaji}
           />
-
+          <Route
+            path="/bread"
+            Component={Bread}
+          />
           <Route
             path="/chicken"
             Component={Chicken}
